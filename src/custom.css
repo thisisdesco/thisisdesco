@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Work+Sans:wght@400;600&display=swap');
+
+
 h1 {
 font-family: 'Bebas Neue', cursive;
 color: white;
@@ -8,7 +11,7 @@ h4 {
     font-family: 'Work Sans', sans-serif;
     font-weight: 600;
     text-transform: uppercase;
-    font-size: 1.15rem;
+    font-size: 1rem;
 }
 
 .img-thumbnail {
@@ -26,6 +29,8 @@ h5 {
 .card-body {
     font-family: 'Work Sans', sans-serif;
     font-size: .9rem;
+    text-align: center;
+    color: #2f2f3f;
 }
 
 .ws-description{
@@ -37,7 +42,7 @@ h5 {
 .lead {
     font-family: 'Work Sans', sans-serif;
     color: #2f2f3f;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .section-title {
@@ -114,6 +119,11 @@ ul {
 .btn {
     font-family: 'Work Sans', sans-serif;
     text-transform: uppercase;
+}
+
+.btn-desco{
+    background-color: #00a3a0;
+    border: solid 1px #00a3a0;
 }
 
 main {
