@@ -21,7 +21,7 @@ const Blurb = (props) => {
                     className="align-top mx-auto dot px-3 py-3"
                     alt="Chat Icon"
                 />
-                <Card.Body class="card-body">
+                <Card.Body className="card-body">
                     <h4>{props.cardTitle}</h4>
                     <Card.Text>
                         {props.cardText}
@@ -44,8 +44,8 @@ class GetInvolved extends Component{
         return(
            <div className="bg-light">
                <Container className="text-center">
-                    <h1 class="display-4 section-title">Want to get involved?</h1>
-                    <p class="lead">{missionStatement}</p>
+                    <h1 className="display-4 section-title">Want to get involved?</h1>
+                    <p className="lead">{missionStatement}</p>
               </Container>
                 <CardDeck>
                     <Blurb icon={ChatIcon} cardTitle="Volunteer" cardText={card1}/>
