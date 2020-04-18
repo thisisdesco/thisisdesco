@@ -2,35 +2,33 @@ import React, {Component} from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import NoelleHeadshot from './images/noelle-headshot.jpg';
 import Image from 'react-bootstrap/Image';
 import Button from 'react-bootstrap/Button';
 
-class Event extends Component {
-    render(){
+const Event = (props) => {
         return(
             <>
                 <Container className="pt-4">
                 {/* Date */}
-                <h4>01/31/2020</h4> 
+                <h4>{props.date}</h4> 
                     <Container>
                         <Row>
                             {/* Event Image */}
                             <Col lg={3}>
-                                <Image thumbnail src={NoelleHeadshot} alt="Event Image" className="float-left"/>
+                                <Image thumbnail src={props.eventImage} alt="Event Image" className="float-left"/>
                             </Col>
                             {/* Event Title and Description */}
                             <Col lg={9} className="pl-0 event-card">
                                 <Col className="h4">
-                                    Event Title
+                                    {props.title}
                                 </Col>
                                 <Col className="h5">
-                                    With Guest Speaker
+                                    {props.speaker}
                                 </Col>
                                 <Col className="ws-description">
-                                    Event Description that is much too long.
+                                    {props.description}
                                 </Col>
-                                <Button variant="outline-info" className="ml-3">
+                                <Button variant="outline-info" className="ml-3" href={props.ticketLink}>
                                     Get Tickets
                                 </Button>
                             </Col>
@@ -39,7 +37,6 @@ class Event extends Component {
                 </Container>
             </>
         );
-    }
 }
 
 export default Event
