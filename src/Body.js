@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import Header from './Header';
 import Vision from './Vision';
 import GetInvolved from './GetInvolved';
-import Events from './Events';
+import EventSection from './Events';
 
 class Body extends Component{
     render(){
@@ -11,7 +11,7 @@ class Body extends Component{
                 {/* Header */}
                 <Header />
                 {/* Upcoming Events */}
-                <Events />
+                <EventSection />
                 {/* Our Vision */}
                 <Vision />
                 {/* Want to Get Involved / 'GetInvolved' */}
