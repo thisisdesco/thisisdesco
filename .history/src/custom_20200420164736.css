@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Work+Sans:wght@400;600&display=swap');
+
+
+h1 {
+font-family: 'Bebas Neue', cursive;
+color: white;
+}
+
+
+h4 {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
+.event-img {
+    border: none !important;
+    height: 200px !important;
+    width: 200px !important;
+    object-fit: cover !important;
+    object-position: 0%;
+}
+
+.col-p-0{
+    padding: 0px !important;
+}
+
+h5 {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: .9rem;
+}
+
+.card-body {
+    font-family: 'Work Sans', sans-serif;
+    font-size: .9rem;
+    text-align: center;
+    color: #2f2f3f;
+}
+
+.ws-description{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1rem;
+    padding-right: 0px;
+}
+
+.lead {
+    font-family: 'Work Sans', sans-serif;
+    color: #2f2f3f;
+    font-size: 1.5rem;
+}
+
+.section-title {
+    color: #2f2f3f;
+    margin-bottom: 1rem;
+}
+
+.our-vision{
+    margin-top: 100px;
+}
+
+.bg-custom {
+    background-color: #00a3a0;
+}
+
+.footer-txt {
+    font-size: .9rem;
+}
+
+.disclaimer {
+    font-size: .5rem;
+}
+
+/* Navbar Transition */
+.navbar {
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+
+.navbar-hide {
+    pointer-events: none;
+    opacity: 0;
+}
+
+/* Icon Backgrounds */
+.dot {
+    height: 100px;
+    width:100px;
+    background-color: white;
+    display: inline-block;
+    border-radius: 50%;
+}
+
+.brand-img {
+    max-width: 100px;
+    max-height: 100px;
+}
+.footer-brand-img {
+    max-width: 200px;
+    max-height: 200px;
+
+}
+
+ul {
+    list-style-type: none;
+}
+
+.background-img {
+    background-image: url(./images/wavy_background.png);
+    background-size: cover;
+}
+
+.linkfont {
+    font-family: 'Work Sans', sans-serif;
+    text-transform: uppercase;
+}
+
+.jumbotron  {
+    background-image: url(./images/coworking_hero_overlay.png);
+    background-size: cover;
+    background-position: 50%;
+}
+
+.btn {
+    font-family: 'Work Sans', sans-serif;
+    text-transform: uppercase;
+}
+
+.btn-outline-primary{
+    background-color: #00a3a0 !important;
+    border: solid 1px #00a3a0;
+}
+
+main {
+  transition: margin-top 0.2s ease-in-out;
+}
+
+/* Media Queries */
+@media (min-width: 769px){
+    .my-custom {
+        max-width: 60%;
+    }
+}
+
+@media (max-width: 769px) {
+    .event-card {
+        margin-top: 1rem;
+    }
+}
