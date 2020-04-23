@@ -16,6 +16,7 @@ class EventSection extends Component {
 
     componentDidMount(){
         let upcomingEvents = [];
+        
         db.collection("events").get().then((results) =>{ 
             results.forEach((res) => {
                 let event = res.data(); //pull event data from firebase
@@ -24,7 +25,7 @@ class EventSection extends Component {
                 if(event.speakerName == undefined){
                     event.speakerName = "DESCO";
                 }
-                if(event.image == undefined){ //set default image if no image in db - must be set here
+                if(event.image == undefined){
                     event.image = "https://firebasestorage.googleapis.com/v0/b/desco-site-eb-integration.appspot.com/o/images%2FDESCO-Logo-notext.png?alt=media";
                 }
                 if(currentDate < eventDate){
@@ -35,6 +36,9 @@ class EventSection extends Component {
                       });
                       upcomingEvents.push(event);
                 }
+                
+                // if event.timestamp is past today's date (check against today's date)
+                
             })
             console.log(upcomingEvents);
             this.setState({upcomingEvents})

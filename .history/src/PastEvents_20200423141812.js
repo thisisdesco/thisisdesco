@@ -6,6 +6,7 @@ import {db} from "./Firebase";
 import {MiniEvent} from './Event';
 import Footer from './Footer';
 import Grid from '@material-ui/core/Grid';
+import placeHolder from './images/descoLogo.png';
 
 class PastEvents extends Component {
     state = {
@@ -54,13 +55,15 @@ class PastEvents extends Component {
                         <Grid container spacing={4} className="pl-2 justify-content-between px-5">
                             {this.state.pastEvents.map((e, i) => {
                                 return(
-                                    <MiniEvent date={e.date} title={e.title} ticketLink={e.ticketLink} eventImage={e.image}/>
+                                   
+                                        <MiniEvent date={e.date} title={e.title} ticketLink={e.ticketLink} eventImage={e.image}/>
+                                    
                                 );
                                 })}
                         </Grid>
                     </div>
                 </Container>
-                <Footer/>
+                {/* <Footer/> */}
             </>
         );
     }

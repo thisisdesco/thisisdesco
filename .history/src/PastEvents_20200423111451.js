@@ -24,7 +24,7 @@ class PastEvents extends Component {
                     event.speakerName = "DESCO";
                 }
                 if(event.image == undefined){
-                    event.image = "https://firebasestorage.googleapis.com/v0/b/desco-site-eb-integration.appspot.com/o/images%2FDESCO-Logo-notext.png?alt=media";
+                    event.image = {}
                 }
                 if(currentDate > eventDate){
                     event.date = eventDate.toLocaleDateString('en-US', { //Format date with leading zero
@@ -54,13 +54,15 @@ class PastEvents extends Component {
                         <Grid container spacing={4} className="pl-2 justify-content-between px-5">
                             {this.state.pastEvents.map((e, i) => {
                                 return(
-                                    <MiniEvent date={e.date} title={e.title} ticketLink={e.ticketLink} eventImage={e.image}/>
+                                   
+                                        <MiniEvent date={e.date} title={e.title} ticketLink={e.ticketLink} eventImage={e.image}/>
+                                    
                                 );
                                 })}
                         </Grid>
                     </div>
                 </Container>
-                <Footer/>
+                {/* <Footer/> */}
             </>
         );
     }

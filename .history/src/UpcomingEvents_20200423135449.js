@@ -5,7 +5,6 @@ import {db} from "./Firebase";
 import Event from './Event';
 import Container from 'react-bootstrap/Container';
 import {imagesRef} from './Firebase';
-import placeHolderImage from './images/descoLogo.png'
 
 class EventSection extends Component {
    
@@ -21,11 +20,12 @@ class EventSection extends Component {
                 let event = res.data(); //pull event data from firebase
                 let eventDate = new Date(Date.parse(event.date));
                 let currentDate = new Date();
+                let placeHolder = imagesRef.child('DESCO-Logo-notext.png').fullPath;
                 if(event.speakerName == undefined){
                     event.speakerName = "DESCO";
                 }
-                if(event.image == undefined){ //set default image if no image in db - must be set here
-                    event.image = "https://firebasestorage.googleapis.com/v0/b/desco-site-eb-integration.appspot.com/o/images%2FDESCO-Logo-notext.png?alt=media";
+                if(event.image == undefined){
+                    event.image = placeHolder.ref.getDownloadURL();
                 }
                 if(currentDate < eventDate){
                     event.date = eventDate.toLocaleDateString('en-US', { //Format date with leading zero
@@ -35,6 +35,9 @@ class EventSection extends Component {
                       });
                       upcomingEvents.push(event);
                 }
+                
+                // if event.timestamp is past today's date (check against today's date)
+                
             })
             console.log(upcomingEvents);
             this.setState({upcomingEvents})

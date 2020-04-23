@@ -24,7 +24,7 @@ class EventSection extends Component {
                 if(event.speakerName == undefined){
                     event.speakerName = "DESCO";
                 }
-                if(event.image == undefined){ //set default image if no image in db - must be set here
+                if(event.image == undefined){
                     event.image = "https://firebasestorage.googleapis.com/v0/b/desco-site-eb-integration.appspot.com/o/images%2FDESCO-Logo-notext.png?alt=media";
                 }
                 if(currentDate < eventDate){
@@ -34,7 +34,8 @@ class EventSection extends Component {
                         year: 'numeric',
                       });
                       upcomingEvents.push(event);
-                }
+                
+                
             })
             console.log(upcomingEvents);
             this.setState({upcomingEvents})

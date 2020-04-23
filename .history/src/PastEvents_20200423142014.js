@@ -54,13 +54,15 @@ class PastEvents extends Component {
                         <Grid container spacing={4} className="pl-2 justify-content-between px-5">
                             {this.state.pastEvents.map((e, i) => {
                                 return(
-                                    <MiniEvent date={e.date} title={e.title} ticketLink={e.ticketLink} eventImage={e.image}/>
+                                   
+                                        <MiniEvent date={e.date} title={e.title} ticketLink={e.ticketLink} eventImage={e.image}/>
+                                    
                                 );
                                 })}
                         </Grid>
                     </div>
                 </Container>
-                <Footer/>
+                {/* <Footer/> */
             </>
         );
     }
