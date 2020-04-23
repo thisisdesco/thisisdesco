@@ -4,7 +4,6 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Image from 'react-bootstrap/Image';
 import Button from 'react-bootstrap/Button';
-import Grid from '@material-ui/core/Grid';
 
 const Event = (props) => {
         return(
@@ -40,18 +39,23 @@ const Event = (props) => {
 
 const MiniEvent = (props) => {
     return(
-        <Grid item>
+        <>
+            <Container>
             {/* Date */}
             <h4>{props.date}</h4> 
-            <div>
-                    {/* Event Image */}
-                    <Image thumbnail src={props.eventImage} alt="Event Image" className="mini-event-img"/>
-                    {/* Event Title and Description */}
-                    <Col className="mini-event-title pl-1">
-                        {props.title}
-                    </Col>
-            </div>
-        </Grid>
+                <Container>
+                        {/* Event Image */}
+                        <Image thumbnail src={props.eventImage} alt="Event Image" className="event-img"/>
+                        {/* Event Title and Description */}
+                        <Col className="mini-event-title pl-1">
+                            {props.title}
+                        </Col>
+                        <Button variant="outline-info" className="ml-1" href={props.ticketLink} target="_blank">
+                            Event Details
+                        </Button>
+                </Container>
+            </Container>
+        </>
     );
 }
 

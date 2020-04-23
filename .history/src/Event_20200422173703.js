@@ -50,6 +50,9 @@ const MiniEvent = (props) => {
                     <Col className="mini-event-title pl-1">
                         {props.title}
                     </Col>
+                    <Button variant="outline-info" className="ml-1" href={props.ticketLink} target="_blank">
+                        Event Details
+                    </Button>
             </div>
         </Grid>
     );

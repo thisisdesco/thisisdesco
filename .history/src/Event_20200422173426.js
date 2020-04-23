@@ -40,18 +40,21 @@ const Event = (props) => {
 
 const MiniEvent = (props) => {
     return(
-        <Grid item>
+        <>
             {/* Date */}
             <h4>{props.date}</h4> 
-            <div>
+            <Grid item>
                     {/* Event Image */}
-                    <Image thumbnail src={props.eventImage} alt="Event Image" className="mini-event-img"/>
+                    <Image thumbnail src={props.eventImage} alt="Event Image" className="event-img"/>
                     {/* Event Title and Description */}
                     <Col className="mini-event-title pl-1">
                         {props.title}
                     </Col>
-            </div>
-        </Grid>
+                    <Button variant="outline-info" className="ml-1" href={props.ticketLink} target="_blank">
+                        Event Details
+                    </Button>
+            </Grid>
+        </>
     );
 }
 

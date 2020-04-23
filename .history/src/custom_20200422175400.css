@@ -60,6 +60,9 @@ h5 {
     height: 120px;
 }
 
+.past-event-grid {
+    max-width: 80%;
+}
 
 .mini-event-card {
     margin: 0px;

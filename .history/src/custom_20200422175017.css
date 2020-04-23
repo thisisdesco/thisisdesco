@@ -56,10 +56,9 @@ h5 {
     font-size: 1.15rem;
     padding-bottom: 5px;
     margin-bottom: 2px;
-    max-width: 230px;
-    height: 120px;
+    max-width: 200px;
+    height: 1px;
 }
-
 
 .mini-event-card {
     margin: 0px;
