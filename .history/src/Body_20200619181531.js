@@ -1,0 +1,29 @@
+import React, {Component} from 'react';
+import Header from './Header';
+import Vision from './Vision';
+import GetInvolved from './GetInvolved';
+import EventSection from './UpcomingEvents';
+import Footer from './Footer';
+import AltFooter from './AltFooter';
+import Sponsors from './Sponsors'
+
+class Body extends Component{
+    render(){
+        return(
+            <div>
+                {/* Header */}
+                <Header />
+                {/* Upcoming Events */}
+                <EventSection />
+                {/* Our Vision */}
+                <Vision />
+                {/* Want to Get Involved / 'GetInvolved' */}
+                <GetInvolved />
+                {/* Footer */}
+                <AltFooter />
+                
+            </div>
+        );
+    }
+}
+export default Body
