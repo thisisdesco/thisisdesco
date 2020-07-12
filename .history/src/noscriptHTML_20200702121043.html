@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>DESCO Website V1</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="CSS/custom.css">
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <!--Import Fonts (Replacing RIFT with BEBAS NEUE)-->
+    <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,600&display=swap" rel="stylesheet">
+</head>
+<body class="bg-custom">
+    <!--Navigation-->
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top py-0 linkfont">
+        <div class="container">
+            <a class="navbar-brand mr-0" href="index.html"><img class="brand-img" src="images/descoLogo.png" alt="DESCO Logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle Navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link linkfont" href="#events">Events</a>
+                    <a class="nav-item nav-link linkfont" href="#about">About</a> <!--Need to link to another page-->
+                    <a class="nav-item nav-link linkfont" href="#getInvolved">Get Involved</a>
+                    <button type="button" class="btn btn-outline-light mb-3 mb-md-0 ml-0 ml-md-3">Contact</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="bg-white">
+      <!--Jumbotron / Hero-->
+      <div class="jumbotron jumbotron-fluid text-white">
+          <div class="container text-center py-5 my-custom">
+              <h1 class="display-4">Envisioning an educational design community in Sacramento for all</h1>
+              <button type="button" class="btn btn-outline-light btn-lg mt-4" onclick="relocate_getInvolved()">Get Involved</button>
+          </div>
+      </div>
+
+      <!--Upcoming Events-->
+      <div id="events" class="container pt-2 px-5">
+          <h1 class="display-4 section-title">Upcoming Events</h1>
+          <div class="container">
+              <!--Mobile version and desktop version of card-->
+              <!--Mobile Version of Card-->
+              <h4>01/31/2020</h4>
+              <div class="container row">
+                  <img class="col-lg-3 img-thumbnail float-left" src="images/noelle-headshot.jpg" alt="Presenter Headshot">
+                  <div class="container col-lg-9 pl-0 event-card">
+                      <h4 class="col">Designing a Something Or Other</h4>
+                      <h5 class="col">With Junior Racer</h5>
+                      <p class="col ws-description">Love great branding? You won’t want to miss our next event. We are stoked to host Smol Z. Cat for a FREE workshop on July 21st. Take a look at what makes designers in this newfound field of technology - or technicians, we're not really sure. That's why we're having this workshop. Free pizza! Lol, JK we can't afford that.</p>
+                      <button type="button" class="btn btn-outline-info ml-3">Get Tickets</button>
+                  </div>
+              </div>
+          </div>
+          <hr class="mt-5">
+          <div class="container pt-4">
+              <h4>02/15/2020</h4>
+              <div class="container row">
+                  <img class="col-lg-3 img-thumbnail float-left" src="images/kim-headshot.jpg" alt="Presenter Headshot">
+                  <div class="container col-lg-9 col-sm-12 pl-0 event-card">
+                      <h4 class="col">Things You Didn't Know About Design</h4>
+                      <h5 class="col">With Tomitha Cat</h5>
+                      <p class="col ws-description">This text is going to be much longer so that I can force a picture to stay square and thumbnail sized. Is that too much to ask!? Want a new look? Have we got something in store for you! On this very special day we are hosting Tomitha Cat for a workshop about things you never knew you didn't know! How paradoxical, or not...really. Take a look at what makes designers in this newfound field of technology - or technicians, we're not really sure. Remember, support us by smashing that subscribe button.</p>
+                      <button type="button" class="btn btn-outline-info ml-3">Get Tickets</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <!--Our Vision-->
+      <div id="about" class="background-img container-fluid">
+          <div class="container pt-5 px-5">
+              <h1 class="display-4 section-title pt-4 our-vision">Our Vision</h1>
+              <div class="row d-flex justify-content-between pb-3">
+                  <p class="lead col-sm-12 col-lg-7">DESCO envisions an educational design community in Sacramento for people from all backgrounds, fields, and skill levels.</p>
+                  <img src="images/values_illustration.png" alt="values illustration" class="img-fluid col-sm-12 col-lg-5 mb-5">
+              </div>
+          </div>
+      </div>
+
+      <!--Get Involved-->
+      <div id="getInvolved" class="bg-light pt-4">
+          <div class="container text-center">
+              <h1 class="display-4 section-title">Want to get involved?</h1>
+              <p class="lead">DESCO is on a mission and is always looking for community support. If you vibe with DESCO's mission, check out ways to get invovled below!</p>
+          </div>
+          <div class="row pt-5 mx-5">
+              <div class="col-lg-4 col-md-12">
+                  <div class="card border-0 bg-light text-center px-3"> 
+                      <img class="dot mx-auto px-3 py-3 card-img-top" src="./images/chat_icon.png" alt="volunteer icon">
+                      <div class="card-body">
+                          <h4>Volunteer</h4>
+                          <p class="card-text">DESCO is always looking for community members to help organize future events. Contact us below to share your skills and see what skills we are currently searching for.</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-4 col-md-12">
+                  <div class="card border-0 bg-light text-center px-3"> 
+                      <img class="dot mx-auto px-3 py-3 card-img-top" src="./images/book_icon.png" alt="book icon">
+                      <div class="card-body">
+                          <h4>Donate</h4>
+                          <p class="card-text">DESCO is always looking for community members to help organize future events. Contact us below to share your skills and see what skills we are currently searching for.</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-4 col-md-12 mb-5">
+                  <div class="card border-0 bg-light text-center px-3"> 
+                      <img class="dot mx-auto px-3 py-3 card-img-top" src="./images/plan_icon.png" alt="plan icon">
+                      <div class="card-body">
+                          <h4>Sponsor</h4>
+                          <p class="card-text">DESCO is always looking for community members to help organize future events. Contact us below to share your skills and see what skills we are currently searching for.</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </main>
+
+    <!--Footer-->
+    <div class="container-fluid bg-custom">
+        <div class="row pt-4 mx-5 d-lg-flex d-sm-block justify-content-center">
+            <div class="col-lg-3 text-white mt-5 ml-5">
+                <img class="footer-brand-img" src="images/DESCO_Wordmark.svg" alt="DESCO Logo">
+            </div>
+            <div class="col-sm-6 col-lg-4 mr-5">
+                <h1 class="display-6 text-white mb-1">Stay in the loop!</h1>
+                <p class="lead text-white footer-txt">Enter your email below to sign up for our newsletter and never miss an event!</p>
+                <input type="text" class="form-control" placeholder="yourname@example.com"> <br>
+                <button class="btn btn-outline-light">Sign Up</button>
+                <p class="disclaimer text-white card-text mt-3">* DESCO respects your privacy and will never share your email without your permission.</p>
+            </div>
+            <div class="col-sm-4 col-lg-3 text-white ml-5 mr-0 pb-4">
+                <h1 class="mb-1">find us online</h1>
+                <!--Social Icons & links-->
+                <a href="https://www.facebook.com/sacdesco" target="_blank"><img src="images/facebook_icon.svg" alt="facebook icon"></a>
+                <a href="https://www.instagram.com/sacdesco/" target="_blank"><img src="images/ig_icon.svg" alt="instagram icon"></a>
+                <a href="https://www.linkedin.com/company/sacdesco" target="_blank"><img src="images/linkedin_icon.svg" alt="linkedin icon"></a>
+                <a href="https://sac-desco.slack.com" target="_blank"><img src="images/slack_icon.svg" alt="slack icon"></a>
+                <h1 class="mb-0">quick links</h1>
+                <div class="container pl-0">
+                    <a href="#about" class="linkfont text-white">About</a> <br>
+                    <a href="#about" class="linkfont text-white">Sponsor</a> <br>
+                    <a href="#about" class="linkfont text-white">Volunteer</a><br>
+                    <a href="#about" class="linkfont text-white">Donate</a><br>
+                    <a href="#about" class="linkfont text-white">Contact</a>
+                </div>
+            </div>
+            <hr class="bg-light col-lg-8">
+        </div>
+        <div class="copyright text-white text-center pb-3 footer-txt"> &copy; DESCO 2020 All Rights Reserved</div>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
