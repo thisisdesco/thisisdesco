@@ -266,9 +266,10 @@ ul {
 }
 
 .btn-outline-danger:active{
-    background: none;
+    background: white;
     cursor: default;
     color: #dc3545;
+    border-style: outset;
 }
 
 

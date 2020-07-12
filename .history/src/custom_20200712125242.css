@@ -252,6 +252,7 @@ ul {
     font-family: 'Work Sans', sans-serif;
     text-transform: uppercase;
     transition: transform .2s;
+    box-shadow:none;
 }
 
 .btn:hover{
@@ -261,14 +262,14 @@ ul {
 .btn-outline-danger:hover{
     transform: translate(0, 0);
     background: none;
-    cursor: default;
     color: #dc3545;
+    box-shadow:none;
 }
 
-.btn-outline-danger:active{
-    background: none;
-    cursor: default;
-    color: #dc3545;
+
+.btn-outline-danger:focus{
+    outline: none;
+    box-shadow: none;
 }
 
 

@@ -269,6 +269,7 @@ ul {
     background: none;
     cursor: default;
     color: #dc3545;
+    border-style: outset;
 }
 
 

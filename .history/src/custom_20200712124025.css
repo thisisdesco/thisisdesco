@@ -258,17 +258,8 @@ ul {
     transform: translate(0, -10%);
 }
 
-.btn-outline-danger:hover{
+.bt-danger{
     transform: translate(0, 0);
-    background: none;
-    cursor: default;
-    color: #dc3545;
-}
-
-.btn-outline-danger:active{
-    background: none;
-    cursor: default;
-    color: #dc3545;
 }
 
 

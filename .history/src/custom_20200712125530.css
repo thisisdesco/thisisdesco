@@ -265,11 +265,6 @@ ul {
     color: #dc3545;
 }
 
-.btn-outline-danger:active{
-    background: none;
-    cursor: default;
-    color: #dc3545;
-}
 
 
 main {

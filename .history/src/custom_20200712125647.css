@@ -266,6 +266,7 @@ ul {
 }
 
 .btn-outline-danger:active{
+    transform: translate(0, 0);
     background: none;
     cursor: default;
     color: #dc3545;
