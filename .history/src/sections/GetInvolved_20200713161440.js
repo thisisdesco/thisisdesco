@@ -37,7 +37,7 @@ const GetInvolved = () => {
         const getInvolved = "DESCO is always looking for community support."
         const getInvolved2 = "Check out ways to get involved below!"
         // VOLUNTEER CARD
-        const card1 = "DESCO is run by volunteers who are passionate about growing Sacramento's design community. Want to contribute?";
+        const card1 = "DESCO is run by volunteers who are passionate about growing Sacramento's design community.";
         const volunteerForm = "https://docs.google.com/forms/d/e/1FAIpQLScrJkbYekalUHPGZV_MfsLzD36WNAyYUNJfPANPoj8a2SDLWQ/viewform?usp=sf_link"
         // PARTNERSHP CARD
         const card2 = "Have an idea for an event or workshop? Want to partner with us?";

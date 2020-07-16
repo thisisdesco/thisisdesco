@@ -82,7 +82,7 @@ h5 {
 }
 
 .headline-container{
-    background-color:white;
+    background-color:rgba(248,249,250,1);
     color: #2f2f3f;
     font-family: Bebas Neue, cursive;
     padding: 50px;
@@ -259,7 +259,7 @@ ul {
 
 
 .jumbotron  {
-    background-image: url(./images/coworking_hero_overlay.png);
+    background-image: url(./images/cowo_hero.jpg);
     background-size: cover;
     background-position: 50%;
     min-height: 500px;

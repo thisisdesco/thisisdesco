@@ -127,7 +127,7 @@ class Header extends Component {
             <NavigationBar />
             {/* Jumbotron */}
             <Jumbotron fluid>
-                <Container className=" text-center py-5 my-custom headline-container" style={headlineContainer}>
+                <Container className="text-md-center text-lg-left py-5 my-auto headline-container" style={headlineContainer}>
                     <p className="jumbo-text">DESCO is An Educational Design Community in Sacramento</p>
                     <Link to="getInvolved" spy={true} smooth={true} offset={-70} duration={500}><Button href="#getInvolved" variant="info">Get Involved</Button></Link>
                 </Container>

@@ -15,7 +15,7 @@ const Partners = () => {
                 <hr/>
             </div>
             <Row>
-                <h1 className="mt-5 mb-2 mx-auto text-center section-title">Thank You to Our Partners</h1>
+                <h1 className="mt-5 mb-2 mx-auto text-center section-title">Thanks to Our Partners</h1>
             </Row>
             <Row className="align-items-center mx-auto">
                 <Col lg={4} sm={12} className="text-center">
