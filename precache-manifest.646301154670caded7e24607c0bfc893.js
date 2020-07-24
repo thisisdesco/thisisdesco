@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "0c9973bcbdb21726fa993a0422799d8f",
+    "revision": "4db765a34e4b231838c51f6754762f0a",
     "url": "/thisisdesco/index.html"
   },
   {
-    "revision": "36e26c7e34651792a174",
+    "revision": "eedf661e8eb3734e4f09",
     "url": "/thisisdesco/static/css/2.7ad897a5.chunk.css"
   },
   {
-    "revision": "0f1f5fcf8cb1fc05e443",
+    "revision": "0ab8b2af3dcf0e925dfd",
     "url": "/thisisdesco/static/css/main.db7563d5.chunk.css"
   },
   {
-    "revision": "36e26c7e34651792a174",
-    "url": "/thisisdesco/static/js/2.708a6293.chunk.js"
+    "revision": "eedf661e8eb3734e4f09",
+    "url": "/thisisdesco/static/js/2.1609f3d1.chunk.js"
   },
   {
     "revision": "18eed0bf1985b2d8aa7c2e6ffd5f12e0",
-    "url": "/thisisdesco/static/js/2.708a6293.chunk.js.LICENSE.txt"
+    "url": "/thisisdesco/static/js/2.1609f3d1.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "0f1f5fcf8cb1fc05e443",
-    "url": "/thisisdesco/static/js/main.4b30e21b.chunk.js"
+    "revision": "0ab8b2af3dcf0e925dfd",
+    "url": "/thisisdesco/static/js/main.480b16be.chunk.js"
   },
   {
     "revision": "e48c8cb791f7a90230f6",
