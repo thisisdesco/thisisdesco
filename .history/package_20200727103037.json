@@ -1,6 +1,6 @@
 {
-  "name": "thisisdesco-v2",
-  "homepage": "http://thisisdesco.com",
+  "name": "thisisdesco-website",
+  "homepage": "https://thisisdesco.com",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
